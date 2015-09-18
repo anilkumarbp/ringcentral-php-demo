@@ -1,0 +1,14 @@
+{
+    "name": "rc/pre-release",
+    "description": "Sample Application before release",
+    "authors": [
+        {
+            "name": "Anil Kumar",
+            "email": "anil.akbp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ringcentral/ringcentral-php": "dev-develop"
+    }
+}
