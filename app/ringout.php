@@ -7,8 +7,8 @@
 				echo "\n";
 
 $response = $platform->post('/account/~/extension/~/ringout', array(
-    'from' => array('phoneNumber' => 'sandbox number'),
-    'to'   => array('phoneNumber' => 'any number')
+    'from' => array('phoneNumber' => '18024486720'),
+    'to'   => array('phoneNumber' => '16197619503')
 ));
 
 $json = $response->json();

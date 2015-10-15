@@ -6,8 +6,8 @@ try{
 
 
 
-    /
-    $rcsdk = new RingCentral\SDK\SDK('your appkey','yopur appsecret','server url');
+    
+    $rcsdk = new RingCentral\SDK\SDK('your appkey','your appsecret','server url');
   
 	$platform = $rcsdk->platform();
     

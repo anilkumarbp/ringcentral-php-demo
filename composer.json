@@ -9,6 +9,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "ringcentral/ringcentral-php": "dev-develop"
+        "ringcentral/ringcentral-php": "dev-master"
     }
 }

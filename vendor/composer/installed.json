@@ -1,65 +1,5 @@
 [
     {
-        "name": "symfony/event-dispatcher",
-        "version": "2.8.x-dev",
-        "version_normalized": "2.8.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/EventDispatcher.git",
-            "reference": "69b6037050614d129fee27e17951ec7968f6567e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/69b6037050614d129fee27e17951ec7968f6567e",
-            "reference": "69b6037050614d129fee27e17951ec7968f6567e",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~2.0,>=2.0.5|~3.0.0",
-            "symfony/dependency-injection": "~2.6|~3.0.0",
-            "symfony/expression-language": "~2.6|~3.0.0",
-            "symfony/phpunit-bridge": "~2.7|~3.0.0",
-            "symfony/stopwatch": "~2.3|~3.0.0"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "",
-            "symfony/http-kernel": ""
-        },
-        "time": "2015-09-09 18:05:45",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.8-dev"
-            }
-        },
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\EventDispatcher\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony EventDispatcher Component",
-        "homepage": "https://symfony.com"
-    },
-    {
         "name": "psr/http-message",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -231,17 +171,17 @@
     },
     {
         "name": "ringcentral/ringcentral-php",
-        "version": "dev-develop",
-        "version_normalized": "dev-develop",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/ringcentral/ringcentral-php.git",
-            "reference": "3ef0607087bc1f0dd56a71f3a14399e1d79367c0"
+            "reference": "bd95e29f7794c1a97eb42070c896a20b6d9a0bff"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ringcentral/ringcentral-php/zipball/3ef0607087bc1f0dd56a71f3a14399e1d79367c0",
-            "reference": "3ef0607087bc1f0dd56a71f3a14399e1d79367c0",
+            "url": "https://api.github.com/repos/ringcentral/ringcentral-php/zipball/bd95e29f7794c1a97eb42070c896a20b6d9a0bff",
+            "reference": "bd95e29f7794c1a97eb42070c896a20b6d9a0bff",
             "shasum": ""
         },
         "require": {
@@ -255,7 +195,7 @@
             "phpunit/phpunit": "*",
             "satooshi/php-coveralls": "dev-master"
         },
-        "time": "2015-09-10 18:14:50",
+        "time": "2015-09-26 00:29:39",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -287,5 +227,65 @@
             "ringcentral",
             "sdk"
         ]
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "2.8.x-dev",
+        "version_normalized": "2.8.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/event-dispatcher.git",
+            "reference": "0ef7669c0af9f62752a96a5d43c1b13c5c2e70e9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/0ef7669c0af9f62752a96a5d43c1b13c5c2e70e9",
+            "reference": "0ef7669c0af9f62752a96a5d43c1b13c5c2e70e9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.0,>=2.0.5|~3.0.0",
+            "symfony/dependency-injection": "~2.6|~3.0.0",
+            "symfony/expression-language": "~2.6|~3.0.0",
+            "symfony/phpunit-bridge": "~2.7|~3.0.0",
+            "symfony/stopwatch": "~2.3|~3.0.0"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "",
+            "symfony/http-kernel": ""
+        },
+        "time": "2015-09-22 13:49:41",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\EventDispatcher\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "https://symfony.com"
     }
 ]

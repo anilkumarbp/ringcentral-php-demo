@@ -23,13 +23,17 @@ require(__DIR__ . '/app/authenticate.php');
 
 // require(__DIR__ . '/app/sendFax.php');
 
+// require(__DIR__ . '/app/call_log.php');
+
+require(__DIR__ . '/app/download_recordings.php');
+
 
 // require(__DIR__ . '/app/extensions.php');
 
 
 // require(__DIR__ . '/app/ringout.php');
 
-require(__DIR__ . '/app/subscription.php');
+// require(__DIR__ . '/app/subscription.php');
 
 
 // 			// 	echo "\n";

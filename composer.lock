@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e6605633b0e222d9b8b9ba921a443e24",
+    "hash": "ffe7ecc6850ece0cd2f01daf79e6628b",
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -172,16 +172,16 @@
         },
         {
             "name": "ringcentral/ringcentral-php",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ringcentral/ringcentral-php.git",
-                "reference": "3ef0607087bc1f0dd56a71f3a14399e1d79367c0"
+                "reference": "bd95e29f7794c1a97eb42070c896a20b6d9a0bff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ringcentral/ringcentral-php/zipball/3ef0607087bc1f0dd56a71f3a14399e1d79367c0",
-                "reference": "3ef0607087bc1f0dd56a71f3a14399e1d79367c0",
+                "url": "https://api.github.com/repos/ringcentral/ringcentral-php/zipball/bd95e29f7794c1a97eb42070c896a20b6d9a0bff",
+                "reference": "bd95e29f7794c1a97eb42070c896a20b6d9a0bff",
                 "shasum": ""
             },
             "require": {
@@ -225,20 +225,20 @@
                 "ringcentral",
                 "sdk"
             ],
-            "time": "2015-09-10 18:14:50"
+            "time": "2015-09-26 00:29:39"
         },
         {
             "name": "symfony/event-dispatcher",
             "version": "2.8.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "69b6037050614d129fee27e17951ec7968f6567e"
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "0ef7669c0af9f62752a96a5d43c1b13c5c2e70e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/69b6037050614d129fee27e17951ec7968f6567e",
-                "reference": "69b6037050614d129fee27e17951ec7968f6567e",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/0ef7669c0af9f62752a96a5d43c1b13c5c2e70e9",
+                "reference": "0ef7669c0af9f62752a96a5d43c1b13c5c2e70e9",
                 "shasum": ""
             },
             "require": {
@@ -283,7 +283,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-09 18:05:45"
+            "time": "2015-09-22 13:49:41"
         }
     ],
     "packages-dev": [],
