@@ -14,11 +14,10 @@ use RingCentral\http\Response;
 $request = $rcsdk->createMultipartBuilder()
                  ->setBody(array(
                      'to'         => array(
-                         array('phoneNumber' => '15856234120'),
+                         array('phoneNumber' => 'toNumber(FaxEnabled)'),
                      ),
                      'faxResolution' => 'High',
                  ))
-                 ->add('Plain Text','Referral_test.pdf')
                  ->add(fopen('https://developers.ringcentral.com/assets/images/ico_case_crm.png', 'r'))   
                  ->request('/account/~/extension/~/fax');
 
