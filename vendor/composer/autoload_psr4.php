@@ -8,6 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Symfony\\Component\\EventDispatcher\\' => array($vendorDir . '/symfony/event-dispatcher'),
     'RingCentral\\SDK\\' => array($vendorDir . '/ringcentral/ringcentral-php/src'),
+    'RingCentral\\Psr7\\' => array($vendorDir . '/ringcentral/psr7/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
-    'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
 );

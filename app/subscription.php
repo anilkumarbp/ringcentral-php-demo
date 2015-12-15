@@ -10,18 +10,34 @@ use RingCentral\SDK\Subscription\Subscription;
 
 
 
-$subscription = $rcsdk->createSubscription()
 
-					  ->addEvents(array('/restapi/v1.0/account/~/extension/~/presence'))
+try {
 
-					  ->addListener(Subscription::EVENT_NOTIFICATION, function(NotificationEvent $e) {
-	
-								print_r($e->getPayload(), true);
-                       });
+$subscription = $rcsdk->createSubscription();
+
+$subscription->addEvents(array(
+	'/account/~/extension/~/message-store',
+	'/account/~/extension/~/presence'));
+
+$subscription->setKeepPolling(true);
+
+$subscription->addListener(Subscription::EVENT_NOTIFICATION, function (NotificationEvent $e) {
+    print 'Notification' . print_r($e->payload(), true) . PHP_EOL;
+});
 
 print 'Subscribing' . PHP_EOL;
 
 $subscription->register();
 
-
 print 'End' . PHP_EOL;
+
+
+} catch (HttpException $e) {
+
+    // $response = $e->getTransaction()->getResponse();
+
+    $message = $e->getMessage() . ' (from backend) at URL ' . $e->apiResponse()->request()->getUri()->__toString();
+
+    print 'Expected HTTP Error: ' . $message . PHP_EOL;
+
+}

@@ -1,18 +1,15 @@
 <?php
 
 
+use RingCentral\SDK\Http\HttpException;
+use RingCentral\http\Response;
+
 
 // // --------------------- Send FAX --------------------
 	echo "\n";
 	echo "--------------Send FAX--------------";
 	echo "\n";
 
-
-$file = file_get_contents('http://www.ziphearing.com/NewDevelopment/test/Referral_test.pdf');
-
-// touch('report.pdf')
-
-echo $file;
 
 $request = $rcsdk->createMultipartBuilder()
                  ->setBody(array(
@@ -21,16 +18,16 @@ $request = $rcsdk->createMultipartBuilder()
                      ),
                      'faxResolution' => 'High',
                  ))
-                 // ->add('Plain Text','Referral_test.pdf')
-                 ->add($file,'Referral_test.pdf')
+                 ->add('Plain Text','Referral_test.pdf')
+                 ->add(fopen('https://developers.ringcentral.com/assets/images/ico_case_crm.png', 'r'))   
                  ->request('/account/~/extension/~/fax');
-
-// print $request->getBody() . PHP_EOL;
 
 $response = $platform->sendRequest($request);
 
+print_r("Request");
+print_r($response->request()-> getHeaders());
+print_r("Response");
+print_r($response->raw());
 
 
-
-print 'Sent Fax ' . $response->json()->uri . PHP_EOL;
 

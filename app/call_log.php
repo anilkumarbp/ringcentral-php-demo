@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 use RingCentral\SDK\Http\HttpException;
 use RingCentral\http\Response;
@@ -15,10 +15,12 @@ try {
 
     
 $apiResponse = $platform->get('/account/~/extension/~/call-log', array(
-	'perPage' => 10
+	'perPage' => 100,
+	'dateFrom' => "",
+	'dateTo' => ""
 	));
 
-print 'Retreieved Call logs' . $apiResponse->json()->uri . PHP_EOL;
+print 'Retreieved Call logs' . $apiResponse->text() . PHP_EOL;
 
 
 } catch (HttpException $e) {

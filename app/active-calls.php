@@ -6,7 +6,7 @@ use RingCentral\SDK;
 
 // ---------------------- Send SMS --------------------
 	echo "\n";
-	echo "------------Send SMS----------------";
+	echo "------------Get Call Logs----------------";
 	echo "\n";
 
 
@@ -14,15 +14,11 @@ use RingCentral\SDK;
 try {
 
     
-$apiResponse = $platform->post('/account/~/extension/~/sms', array(
-	'from' => array('phoneNumber'=> 'fromNumber'),
-	'to' => array(
-				array('phoneNumber' => 'toNumber'),
-				),
-	'text' => 'Test from php 1.0.0',
+$apiResponse = $platform->get('/account/~/extension/~/active-calls', array(
+	'perPage' => 100
 	));
 
-print 'Sent SMS ' . $apiResponse->json()->uri . PHP_EOL;
+print 'Retreieved Call logs' . $apiResponse->text() . PHP_EOL;
 
 
 } catch (HttpException $e) {
@@ -34,4 +30,3 @@ print 'Sent SMS ' . $apiResponse->json()->uri . PHP_EOL;
     print 'Expected HTTP Error: ' . $message . PHP_EOL;
 
 }
-

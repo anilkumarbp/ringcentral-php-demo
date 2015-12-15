@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    $vendorDir . '/guzzlehttp/psr7/src/functions_include.php',
+    $vendorDir . '/ringcentral/psr7/src/functions_include.php',
 );
