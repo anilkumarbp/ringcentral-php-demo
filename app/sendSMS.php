@@ -1,8 +1,8 @@
 <?php
 
-use RingCentral\SDK\Http\HttpException;
-use RingCentral\http\Response;
-use RingCentral\SDK;
+// use RingCentral\SDK\Http\HttpException;
+// use RingCentral\http\Response;
+// use RingCentral\SDK;
 
 // ---------------------- Send SMS --------------------
 	echo "\n";
@@ -15,11 +15,11 @@ try {
 
     
 $apiResponse = $platform->post('/account/~/extension/~/sms', array(
-	'from' => array('phoneNumber'=> 'fromNumber'),
+	'from' => array('phoneNumber'=> ''),
 	'to' => array(
-				array('phoneNumber' => 'toNumber'),
+				array('phoneNumber' => ''),
 				),
-	'text' => 'Test from php 1.0.0',
+	'text' => 'Testing !',	
 	));
 
 print 'Sent SMS ' . $apiResponse->json()->uri . PHP_EOL;

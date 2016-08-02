@@ -9,6 +9,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "ringcentral/ringcentral-php": "dev-master"
+        "ringcentral/ringcentral-php": "dev-master",
+        "dropbox/dropbox-sdk": "1.1.*"
     }
 }

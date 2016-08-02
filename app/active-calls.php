@@ -6,7 +6,7 @@ use RingCentral\SDK;
 
 // ---------------------- Send SMS --------------------
 	echo "\n";
-	echo "------------Get Call Logs----------------";
+	echo "------------Get Account Level Call Logs----------------";
 	echo "\n";
 
 
@@ -14,7 +14,9 @@ use RingCentral\SDK;
 try {
 
     
-$apiResponse = $platform->get('/account/~/extension/~/active-calls', array(
+$apiResponse = $platform->get('/account/~/active-calls', array(
+	// 'direction' => 'Inbound',
+	'type' => 'Voice',
 	'perPage' => 100
 	));
 

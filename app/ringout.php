@@ -17,26 +17,15 @@ try {
         $start = microtime(true);
         print 'Start Time :' . $start . PHP_EOL;
         $response = $platform->post('/account/~/extension/~/ringout', array(
-            'from' => array('phoneNumber' => 'FromNumber'),
-            'to'   => array('phoneNumber' => 'ToNumber')
+            'from' => array('phoneNumber' => ''),
+            'to'   => array('phoneNumber' => '')
         ));
 
         $json = $response->json();
 
+        print 'response is :' . json_encode($json) . PHP_EOL;
+
         $lastStatus = $json->status->callStatus;
-
-        // Poll for call status updates
-
-        while ($lastStatus == 'InProgress') {
-
-            $current = $platform->get($json->uri);
-            $currentJson = $current->Json();
-            $lastStatus = $currentJson->status->callStatus;
-            print 'Status: ' . json_encode($currentJson->status) . PHP_EOL;
-
-            sleep(2);
-
-        }
 
         print 'Done.' . PHP_EOL;
         $end = microtime(true);
@@ -52,7 +41,6 @@ try {
 
 } catch (HttpException $e) {
 
-        // $response = $e->getTransaction()->getResponse();
 
         $message = $e->getMessage() . ' (from backend) at URL ' . $e->apiResponse()->request()->getUri()->__toString();
 

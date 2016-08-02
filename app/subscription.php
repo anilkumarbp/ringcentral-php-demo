@@ -17,7 +17,7 @@ $subscription = $rcsdk->createSubscription();
 
 $subscription->addEvents(array(
 	'/account/~/extension/~/message-store',
-	'/account/~/extension/~/presence'));
+	'/account/~/extension/~/presence?detailedTelephonyState=true'));
 
 $subscription->setKeepPolling(true);
 

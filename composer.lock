@@ -4,8 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffe7ecc6850ece0cd2f01daf79e6628b",
+    "hash": "1c1cff77dbd9651815afb8d19172a1f7",
     "packages": [
+        {
+            "name": "dropbox/dropbox-sdk",
+            "version": "v1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dropbox/dropbox-sdk-php.git",
+                "reference": "6901f8122458e0ce7e391468c0cf6cca465bd0ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dropbox/dropbox-sdk-php/zipball/6901f8122458e0ce7e391468c0cf6cca465bd0ee",
+                "reference": "6901f8122458e0ce7e391468c0cf6cca465bd0ee",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">= 5.3"
+            },
+            "require-dev": {
+                "apigen/apigen": "2.8.2",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "2.0.0RC3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Dropbox": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Dropbox SDK for PHP",
+            "keywords": [
+                "dropbox"
+            ],
+            "time": "2015-06-29 21:47:57"
+        },
         {
             "name": "psr/http-message",
             "version": "dev-master",
@@ -57,23 +96,22 @@
         },
         {
             "name": "pubnub/pubnub",
-            "version": "v3.7.9",
+            "version": "3.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pubnub/php.git",
-                "reference": "fee508e7271cd5c944a73c505fb8d9d540d69f35"
+                "reference": "5bcc5d0d0ade826daf6f6516f4182279bf8cbf82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pubnub/php/zipball/fee508e7271cd5c944a73c505fb8d9d540d69f35",
-                "reference": "fee508e7271cd5c944a73c505fb8d9d540d69f35",
+                "url": "https://api.github.com/repos/pubnub/php/zipball/5bcc5d0d0ade826daf6f6516f4182279bf8cbf82",
+                "reference": "5bcc5d0d0ade826daf6f6516f4182279bf8cbf82",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpdocumentor/phpdocumentor": "dev-master",
                 "phpunit/phpunit": "3.7.*"
             },
             "type": "library",
@@ -88,15 +126,7 @@
             ],
             "authors": [
                 {
-                    "name": "Dmitry Medvedev",
-                    "email": "gektor1@gmail.com"
-                },
-                {
-                    "name": "Victor Kislichenko",
-                    "email": "dofer@bigmir.net"
-                },
-                {
-                    "name": "PubNub Support",
+                    "name": "PubNub",
                     "email": "support@pubnub.com"
                 }
             ],
@@ -110,24 +140,24 @@
                 "real-time",
                 "realtime"
             ],
-            "time": "2015-07-24 11:09:26"
+            "time": "2016-02-16 23:01:38"
         },
         {
             "name": "ringcentral/psr7",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ringcentral/psr7.git",
-                "reference": "898bba9e2c787bb39743c8c2ab13920c0ab10b2d"
+                "reference": "2594fb47cdc659f3fcf0aa1559b7355460555303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ringcentral/psr7/zipball/898bba9e2c787bb39743c8c2ab13920c0ab10b2d",
-                "reference": "898bba9e2c787bb39743c8c2ab13920c0ab10b2d",
+                "url": "https://api.github.com/repos/ringcentral/psr7/zipball/2594fb47cdc659f3fcf0aa1559b7355460555303",
+                "reference": "2594fb47cdc659f3fcf0aa1559b7355460555303",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.29",
+                "php": ">=5.3",
                 "psr/http-message": "~1.0"
             },
             "provide": {
@@ -168,7 +198,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2015-10-06 20:18:36"
+            "time": "2016-03-25 17:36:49"
         },
         {
             "name": "ringcentral/ringcentral-php",
@@ -176,12 +206,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ringcentral/ringcentral-php.git",
-                "reference": "eff7e0eaec73940026895b4f355c36745e75d8af"
+                "reference": "3b98b2978cbf63a4b4afcf1a2eb91ab0d5cdd9f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ringcentral/ringcentral-php/zipball/eff7e0eaec73940026895b4f355c36745e75d8af",
-                "reference": "eff7e0eaec73940026895b4f355c36745e75d8af",
+                "url": "https://api.github.com/repos/ringcentral/ringcentral-php/zipball/3b98b2978cbf63a4b4afcf1a2eb91ab0d5cdd9f6",
+                "reference": "3b98b2978cbf63a4b4afcf1a2eb91ab0d5cdd9f6",
                 "shasum": ""
             },
             "require": {
@@ -193,7 +223,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "*",
-                "satooshi/php-coveralls": "dev-master"
+                "satooshi/php-coveralls": "1.0.0"
             },
             "type": "library",
             "autoload": {
@@ -225,7 +255,7 @@
                 "ringcentral",
                 "sdk"
             ],
-            "time": "2015-10-29 09:54:02"
+            "time": "2016-04-11 22:14:24"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -233,12 +263,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "a5eb815363c0388e83247e7e9853e5dbc14999cc"
+                "reference": "a158f13992a3147d466af7a23b564ac719a4ddd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/a5eb815363c0388e83247e7e9853e5dbc14999cc",
-                "reference": "a5eb815363c0388e83247e7e9853e5dbc14999cc",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/a158f13992a3147d466af7a23b564ac719a4ddd8",
+                "reference": "a158f13992a3147d466af7a23b564ac719a4ddd8",
                 "shasum": ""
             },
             "require": {
@@ -285,7 +315,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-30 20:15:42"
+            "time": "2016-05-03 18:59:18"
         }
     ],
     "packages-dev": [],

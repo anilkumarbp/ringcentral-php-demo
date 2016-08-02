@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Pubnub\\' => array($vendorDir . '/pubnub/pubnub/composer/lib'),
+    'Dropbox' => array($vendorDir . '/dropbox/dropbox-sdk/lib'),
 );
